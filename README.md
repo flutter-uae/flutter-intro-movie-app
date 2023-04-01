@@ -28,3 +28,7 @@ In this session, we will dive deeper into Flutter and explore some advanced conc
 - Handling JSON responses
 - Connecting Movie app UI with APIs
 - Resources for Advance Flutter
+
+| Chapter 1 | Chapter 2 TBD|
+|-----------|-----------|
+|      ![chapter1_final](https://user-images.githubusercontent.com/15221068/229287109-99b89248-a937-4478-b15e-89701238e8a1.png) |  ![chapter2_wip](https://user-images.githubusercontent.com/15221068/229287213-a60091da-b70d-4104-ab41-f18d335e1f6e.png)         |
