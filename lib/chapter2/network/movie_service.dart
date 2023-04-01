@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 
 /// Register to imdb API (https://imdb-api.com/) and get an own apiKey for FREE.
-const String apiKey = 'todo';
+const String apiKey = 'TODO';
 
 Future<List<Movie>> fetchPopularMovies() async {
   final Response response = await http.get(
