@@ -34,6 +34,7 @@ class MoviesScreen extends StatelessWidget {
             child: Column(
               children: const <Widget>[
                 MoviesListItem(
+                  // image: 'https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_Ratio0.6716_AL_.jpg',
                   title: 'Movie title',
                   rating: '9.9',
                 ),
@@ -97,7 +98,7 @@ class MoviesListItem extends StatelessWidget {
       child: Row(
         children: [
           if (image != null && image!.isNotEmpty)
-            Image.network(image!)
+            Image.network(image!, height: 52)
           else
             const Icon(Icons.movie, size: 52),
           const SizedBox(width: 16),
