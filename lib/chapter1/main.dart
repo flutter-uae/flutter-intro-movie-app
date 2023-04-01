@@ -4,6 +4,8 @@ void main() {
   runApp(const MyApp());
 }
 
+/// The top-level widget of the application.
+@immutable
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,9 +19,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// The screen that displays a list of movies.
+@immutable
 class MoviesScreen extends StatelessWidget {
   const MoviesScreen({super.key, required this.title});
 
+  /// The title to display in the app bar.
   final String title;
 
   @override
@@ -79,6 +84,8 @@ class MoviesScreen extends StatelessWidget {
   }
 }
 
+/// A single item in the movies list.
+@immutable
 class MoviesListItem extends StatelessWidget {
   const MoviesListItem({
     Key? key,
@@ -87,8 +94,13 @@ class MoviesListItem extends StatelessWidget {
     required this.rating,
   }) : super(key: key);
 
+  /// The title of the movie.
   final String title;
+
+  /// The rating of the movie.
   final String rating;
+
+  /// The URL of the movie's image, or null if no image is available.
   final String? image;
 
   @override
