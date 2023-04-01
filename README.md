@@ -1,16 +1,30 @@
-# flutter_intro_movie_app
+# Flutter introduction: Movie App
+## Create a simple movie app
 
-A new Flutter project.
+This repository is aimed at providing a basic understanding of Flutter and its features.
+This repository was created to support the [Introduction to Flutter virtual event](https://gdsc.community.dev/events/details/developer-student-clubs-bakhtiyarpur-college-of-engineering-patna-presents-introduction-to-flutter/), in collaboration with the Google Developer Student Clubs and Bakhtiyarpur College of Engineering - Patna. The event aims to provide a comprehensive understanding of Flutter and enable participants to build amazing applications.
+It is divided into two parts.
 
-## Getting Started
+## Day 1 - 1st chapter
+This session provides an introduction to Flutter and covers various aspects of its architecture. Here are the topics that will be covered:
 
-This project is a starting point for a Flutter application.
+- What is Flutter?
+- History of Flutter
+- Advantages of Flutter
+- Flutter Architecture
+- Everything is a Widget
+- Stateless vs Stateful Widgets
+- Hot reload & Hot restart
+- Building Movie app UI
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Day 2 - 2nd chapter
+In this session, we will dive deeper into Flutter and explore some advanced concepts. We will also cover how to connect a Flutter app with APIs. Here are the topics that will be covered:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Understanding some advanced widget & UI components
+- Synchronous & Asynchronous programming
+- Pubspec & package integration
+- Understanding REST API calls with DIO
+- Handling JSON responses
+- Connecting Movie app UI with APIs
+- Resources for Advance Flutter
