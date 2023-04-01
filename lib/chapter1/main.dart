@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: const MoviesScreen(title: "Most Popular Movies"),
+      home: const MovieListScreen(title: "Most Popular Movies"),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
 
 /// The screen that displays a list of movies.
 @immutable
-class MoviesScreen extends StatelessWidget {
-  const MoviesScreen({super.key, required this.title});
+class MovieListScreen extends StatelessWidget {
+  const MovieListScreen({super.key, required this.title});
 
   /// The title to display in the app bar.
   final String title;
@@ -34,44 +34,44 @@ class MoviesScreen extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 16),
-          color: Colors.white,
           child: SingleChildScrollView(
             child: Column(
               children: const <Widget>[
-                MoviesListItem(
-                  // image: 'https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_Ratio0.6716_AL_.jpg',
+                MovieListItem(
+                  image:
+                      'https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_Ratio0.6716_AL_.jpg',
                   title: 'Movie title',
                   rating: '9.9',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.6',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.3',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.2',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.1',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.1',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.1',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.1',
                 ),
-                MoviesListItem(
+                MovieListItem(
                   title: 'Movie title',
                   rating: '9.1',
                 ),
@@ -86,8 +86,8 @@ class MoviesScreen extends StatelessWidget {
 
 /// A single item in the movies list.
 @immutable
-class MoviesListItem extends StatelessWidget {
-  const MoviesListItem({
+class MovieListItem extends StatelessWidget {
+  const MovieListItem({
     Key? key,
     this.image,
     required this.title,
@@ -117,10 +117,7 @@ class MoviesListItem extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                title,
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
+              Text(title, style: const TextStyle(fontSize: 16)),
               Row(
                 children: [
                   const Icon(Icons.star, color: Colors.yellow),
