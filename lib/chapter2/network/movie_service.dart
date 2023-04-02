@@ -15,12 +15,12 @@ Future<List<Movie>> fetchPopularMovies() async {
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
     // then parse the JSON.
-    List<Movie> movies = [];
-    int numberOfMovie = 100;
     var data = convert.jsonDecode(response.body);
-    for (int i = 0; i < numberOfMovie; i++) {
-      movies.add(Movie.fromJson(data["items"][i]));
-    }
+
+    // We use the List.from constructor to create
+    // a new list of Movie objects from the transformed items
+    List<Movie> movies =
+        List<Movie>.from(data["items"].map((item) => Movie.fromJson(item)));
     return movies;
   } else {
     // If the server did not return a 200 OK response,
