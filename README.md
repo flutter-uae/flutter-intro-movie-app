@@ -30,6 +30,8 @@ In this session, we will dive deeper into Flutter and explore some advanced conc
 - Resources for Advance Flutter!
 
 
+
 | Chapter 1 | Chapter 2|
 |-----------|-----------|
-|      ![chapter1_final](https://user-images.githubusercontent.com/15221068/229287109-99b89248-a937-4478-b15e-89701238e8a1.png) |  [final](https://user-images.githubusercontent.com/15221068/230610175-e8b9e50e-7430-4733-a015-0aa13b076146.png)        | 
+|      ![chapter1_final](https://user-images.githubusercontent.com/15221068/229287109-99b89248-a937-4478-b15e-89701238e8a1.png) | ![final_movie_app](https://user-images.githubusercontent.com/15221068/230610497-2536ee01-2cc6-45a5-bf48-c2ccf0faecb7.png)
+ | 
